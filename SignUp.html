@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up to DavidPharm</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <div id="preloader"><img src="assets/logodowns.png" alt=""></div>
+    <div class="account">
+        <img src="./assets/logodownload.png" alt="">
+        <form action="Store.html" class="signupform" method="POST" onsubmit="return valid()">
+            <h2>Create Account</h2>
+            <p>Name</p>
+            <input type="text" id="name" class="in"><br>
+            <span id="Nerr"></span>
+            <p>Email</p>
+            <input type="email" id="mail" class="in" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"><br>
+            <span id="Mailerr"></span>
+            <p>Address</p>
+            <input type="text" id="residence" class="in"><br>
+            <span id="adderr"></span>
+            <p>Phone Number</p>
+            <input type="text" id="phoneNo" class="in" pattern="(?=.*?[0-9]).{11}"><br>
+            <span id="Phoneerr"></span>
+            <p>Create Password</p>
+            <input type="password" id="password" class="in" pattern="(?=.*\d)(?=.*[a-z])(?=/*[A-Z])(?=.*?[!@#$%^&*-]).{6}"><br>
+            <span id="Passerr"></span><br><br>
+            
+            <a href="./Store.html"><button type="submit">Sign Up</button></a>
+        </form>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

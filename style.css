@@ -1,0 +1,1568 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* =======================================
+            SIGN UP PAGE
+======================================= */
+
+.account{
+    width: 100%;
+    height: 104.1vh !important;
+    margin-top: -28px;
+    padding-top: 2%;
+    background-image: linear-gradient(45deg, rgba(34, 192, 255, 0.675), rgba(34, 192, 255, 0.355)), url(../assets/medical-banner-with-doctor-wearing-equipment.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.account img{
+    border-radius: 100%;
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.signupform{
+    width: 29%;
+    margin: 2% auto;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background-color: rgb(255, 255, 255);
+}
+.signupform input{
+    border: none;
+    padding: 5px;
+    /* margin-top: -45px !important; */
+    box-shadow: 0px 0px 10px 0px rgba(167, 166, 166, 0.53);
+    /* border-bottom: 1px solid gray; */
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: -25px !important;
+}
+.signupform h2{
+    font-size: 28px;
+    font-weight: 650;
+    text-align: center;
+    color: rgb(17, 17, 17);
+    margin-bottom: 5px;
+}
+.signupform button{
+    background-color: rgb(0, 150, 219);
+    border: none;
+    padding: 8px 20px;
+    font-weight: 500;
+    color: white;
+    border-radius: 30px;
+}
+.signupform button:hover{
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+.signupform span{
+    margin-bottom: 10px;
+}
+.signupform p{
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+/* ============================================
+                HOME PAGE
+============================================ */
+
+
+/* -------------------
+    PRELOADER
+------------------- */
+#preloader{
+    width:100%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120vh;
+    z-index:1000;
+}
+#preloader img{
+    animation-name: preani;
+    animation-delay: 2s ease-in-out;
+    animation-iteration-count:infinite;
+    animation-duration: 1.5s;
+    width: 130px;
+}
+@keyframes preani{
+    0%{
+      opacity:0;
+      transform:scale(0.95);
+    }
+    100%{
+        opacity:1;
+        transform: scale(1.2);
+    }
+} 
+
+
+/* --------------------------------------
+            NAVIGATION BAR
+-------------------------------------- */
+
+.mynav{
+    padding: 5px 3% !important;
+    display: flex !important;
+    align-items: center !important;
+    position: fixed;
+    top: 0;
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    z-index:8;
+    box-shadow: 0 0 6px 0 rgba(10, 10, 15, 0.906);
+}
+.mynav img{
+    /* width: 60px !important; */
+    border-radius: 100%;
+    margin-right: 3%;
+}
+.mynav a{
+    color: white;
+    font-size: 18.5px;
+    font-weight: 600;
+    margin-right: 3px;
+}
+.mynav a:hover{
+    color: rgb(19, 19, 255);
+}
+.mynav .active{
+    color: rgb(34, 192, 255) !important;
+    border-bottom: 2px solid rgb(34, 192, 255) !important;
+}
+.navColor{
+    /* color: rgb(17, 17, 17); */
+    background-color: white;
+}
+.linkcolor{
+    color: rgb(17, 17, 17) !important;
+}
+
+/* --------------------------------------
+            HERO SECTION
+----------------------------------------- */
+
+.hero{
+    color: white;
+    height: 100vh;
+    padding: 4%;
+    background-position:center;
+    background-size: cover;
+    background-image: url(../assets/medical-banner-with-doctor-wearing-goggles.jpg);
+    position: relative;
+}
+.hero::before{
+    content: "";
+    background: linear-gradient(60deg, rgba(10, 10, 10, 0.973), rgba(10, 10, 10, 0.965),  rgba(10, 10, 15, 0.624));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero h1{
+    font-size: 45px;
+    margin-top: 15%;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+.hero p{
+    font-size: 19px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+.hero button{
+    background-color: rgb(0, 150, 219);
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+}
+.hero button:hover{
+    background-color: white;
+    color: rgb(0, 150, 219);
+}
+
+/* -------------------------------------------
+        HOME PAGE CALL TO ACTION
+------------------------------------------- */
+
+.homecall{
+    margin: 80px auto 30px;
+    height: auto;
+    font-size: 18px;
+    color: rgb(17, 17, 17);
+}
+.homecall .hcall1{
+    box-shadow: 0 0 18px 0 rgba(104, 104, 117, 0.25);
+    padding: 15px 15px 5px;
+    border-radius: 10px;
+    margin-right: 16px;
+    width: 23.5%;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.homecall .hcall1 img{
+    width: 60px;
+    margin: 5px 0px 10px;
+}
+.homecall .hcall2{
+    box-shadow: 0 0 18px 0 rgba(104, 104, 117, 0.25);
+    padding: 15px 15px 5px;
+    border-radius: 10px;
+    margin-right: 16px;
+    width: 23.5%;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.homecall .hcall2 img{
+    width: 65px;
+    margin: 5px 0px 10px;
+}
+.homecall .hcall3{
+    box-shadow: 0 0 18px 0 rgba(104, 104, 117, 0.25);
+    padding: 15px 15px 5px;
+    border-radius: 10px;
+    margin-right: 16px;
+    width: 23.5%;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.homecall .hcall3 img{
+    width: 60px;
+    margin: 5px 0px 10px;
+}
+.homecall .hcall4{
+    box-shadow: 0 0 18px 0 rgba(104, 104, 117, 0.25);
+    padding: 15px 15px 5px;
+    border-radius: 10px;
+    margin-right: 16px;
+    width: 23.5%;
+    line-height:25px;
+    margin-bottom: 15px;
+}
+.homecall .hcall4 img{
+    width: 80px;
+    margin: 5px 0px 10px;
+}
+
+/* ----------------------------
+    HOME PAGE ABOUT US
+----------------------------  */
+
+.habout{
+    margin: 80px auto 30px;
+    height: auto;
+    color: rgb(17, 17, 17);
+    font-size: 18px;
+}
+.habout b{
+    border-radius: 100%;
+    color: rgb(0, 80, 255); 
+    font-size: 24px;
+}
+.aboutblue{
+    color: rgb(0, 80, 255);
+    background-color: rgb(230, 247, 253);
+    padding: 6px 10px;
+    font-size: 18px;
+    /* width: 100%; */
+    margin: 0 auto;
+    text-align: center;
+    /* height: 40px; */
+    font-weight: 600;
+    border-radius: 20px;
+}
+.habout h2{
+    margin: 15px auto;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    /* width: 100%; */
+}
+.h2blue{
+    color: rgb(0, 80, 255);
+}
+.habout h3{
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    margin: 5px auto 40px;
+    width: 60%;
+}
+.habout h4{
+    margin-bottom: 20px;
+}
+.habout img{
+    width: 100%;
+    border-radius: 8px;
+}
+.habout .hbold{
+    font-weight: 600;
+    font-size: 20px;
+}
+.habout p{
+    font-size: 17px;
+}
+.iconic{
+    width: 40px !important;
+    border-radius: 100% !important;
+    margin-bottom: 2px;
+    margin-right: 5px;
+}
+
+/* -------------------------------
+    WHAT WE HAVE TO OFFER
+------------------------------- */
+.hoffer{
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.781), rgba(255, 255, 255, 0.782)), url(../assets/african-woman-biochemist-researcher-checking-manifestations-vaccine-working-modern-equipped-laboratory-multiethnic-doctors-examining-virus-evolution-using-high-tech-researching-diagnosis.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    margin: 80px auto 30px;
+    color: rgb(17, 17, 17);
+    font-size: 18px;
+    padding: 0 120px;
+    /* gap: 10px; */
+    align-items: center;
+}
+.hoffer .hoffer1{
+    box-shadow: 0 0 18px 0 rgba(104, 104, 117, 0.25);
+    padding: 45px 15px 15px;
+    border-radius: 10px;
+    line-height: 25px;
+    width: 28%;
+    height: 35vh;
+    margin: 0px auto;
+    background-color: rgb(34, 192, 255);
+}
+.hoffer .hoffer2{
+    box-shadow: 0 0 18px 0 rgba(104, 104, 117, 0.25);
+    padding: 45px 15px 15px;
+    border-radius: 10px;
+    line-height: 25px;
+    width: 28%;
+    height: 35vh;
+    margin: 0px auto;
+    background-color: rgb(34, 192, 255);
+}
+.hoffer .hoffer3{
+    box-shadow: 0 0 18px 0 rgba(104, 104, 117, 0.25);
+    padding: 45px 15px 15px;
+    border-radius: 10px;
+    line-height: 25px;
+    width: 28%;
+    height: 35vh;
+    margin: 0 auto;
+    background-color: rgb(34, 192, 255);
+}
+.hoffer span{
+    font-size: 35px !important;
+    text-align: center;
+    padding: 7px 14px;
+    background-color: white;
+    border-radius: 100%;
+    /* margin-bottom: 20px; */
+}
+.hoffer h2{
+    color: white!important;
+    font-size: 39px;
+    font-weight: 650;
+}
+.hoffer p{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+/* ---------------------
+    FOR PARTNERS
+--------------------- */
+.partners{
+    height: 25vh;
+    margin: 80px auto 50px;
+    align-items: center;
+    flex-direction: column;
+}
+.partners .pfizer{
+    width: 135px;
+}
+.partners img{
+    width: 155px;
+}
+.partners .nafdac{
+    width: 105px;
+}
+
+
+/* -----------------------------------
+    HOME PAGE SERVICES SECTION
+----------------------------------- */
+#services{
+    margin: 0px auto;
+}
+#services h2{
+    margin: 15px auto;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+}
+#services span{
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    margin: 0px auto 40px;
+    font-weight: 550;
+}
+#services .h2blue{
+    font-size: 35px;
+    font-weight: 800;
+}
+.hservices{
+    color: rgb(17, 17, 17);
+    font-size: 18px;
+    padding: 0 20px;
+    align-items: center;
+}
+.hservices h3{
+    font-size: 25px;
+    font-weight: 650;
+    line-height: 31px;
+    padding-bottom: 5px;
+}
+.hservices .serve1{
+    border-radius: 10px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    background-color: rgb(246, 252, 255);
+}
+.hservices .serve2{
+    border-radius: 10px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    background-color: rgb(246, 252, 255);
+}
+.hservices .serve3{
+    border-radius: 10px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    background-color: rgb(246, 252, 255);
+}
+.hservices .serve1 img{
+    width: 150px;
+    margin-top: 2px;
+    float: right;
+    padding-bottom: 8px;
+}
+.hservices .serve2 img{
+    width: 195px;
+    margin-top: -20px;
+    float: right;
+}
+.hservices .serve3 img{
+    width: 212px;
+    float: right;
+    padding-bottom: 10px;
+}
+
+/* ------------------------
+    CUSTOMER REVIEW
+----------------------- */
+.review{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../assets/medic-patient-looking-human-body-analysis.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.testimonialtitle{
+    font-weight: bold;
+    line-height: 50px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+.rev{
+    margin: 20px auto;
+}
+.rev1{
+    background-color: white;
+    border-radius: 13px;
+    padding: 15px 13px 10px 15px;
+    margin-left: 15px;
+}
+.rev2{
+    background-color: white;
+    border-radius: 13px;
+    padding: 15px 13px 10px 15px;
+    margin-left: 15px;
+}
+.reviewer{
+    width: 80px;
+    border-radius: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+/* -------------------------
+    CONTACT US SECTION
+--------------------------- */
+
+.contact .heading{
+    font-size: 38px;
+    font-weight: 800; 
+    color: rgb(17, 17, 17);
+}
+.contact .headingpara{
+    font-size: 20px;
+    color: rgb(17, 17, 17);
+}
+.contact .form-control{
+    border: none;
+    background: #f3f3f3; 
+}
+.contact .form-control:active, .form-control:focus{
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: rgb(17, 17, 17);
+  background: #f3f3f3; 
+}
+.contact .col-form-label{
+    color: rgb(17, 17, 17); 
+}
+.contact .btn, .form-control, .custom-select{
+    height: 50px; 
+}
+.contact .custom-select:active, .custom-select:focus{
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: rgb(17, 17, 17); 
+}  
+.contact .btn{
+    border: none;
+    border-radius: 4px !important; 
+}
+.contact .btn.btn-primary{
+    background: rgb(17, 17, 17);
+    color: #fff;
+    padding: 15px 20px; 
+}
+.contact .btn:hover{
+    color: #fff; 
+}
+.contact .btn:active, .btn:focus{
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; 
+}
+.contact .box{
+    padding: 40px;
+    background: #fff;
+    -webkit-box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08); 
+}
+.contact .box h3{
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-align: center; 
+} 
+.contact label.error{
+    font-size: 12px;
+    color: red; 
+}
+.contact #message{
+    resize: vertical; 
+    height: 200px;
+} 
+.contact #form-message-warning, #form-message-success{
+    display: none; 
+}
+.contact #form-message-warning{
+    color: #B90B0B; 
+}
+.contact #form-message-success{
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold; 
+}
+.contact .submitting{
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(17, 17, 17); 
+}
+/* --------------------------
+        FOOTER SECTION
+----------------------------   */
+
+footer{
+    background-color: rgb(17, 17, 17);
+    color: white;
+    /* margin-top: 25px; */
+    padding: 30px 0 25px;
+    text-align: left;
+}
+footer img{
+    width: 70px;
+    display: block;
+}
+.foot{
+    margin: 0 auto;
+}
+.foot .terms span{
+    margin-right: 10px;
+}
+.foot p:hover{
+    color: rgb(0, 150, 219);
+}
+footer .port .platforms{
+    text-align: right;
+    padding-right: 3%;
+}
+footer .port .platforms span{
+    margin-left: 10px;
+    border-radius: 100%;
+    padding: 7px 9px;
+    border: 1px solid white;
+    text-align: center;
+}
+footer .port .platforms span:hover{
+    background-color: rgb(0, 150, 219);
+    border: 1px solid rgb(0, 150, 219);
+}
+footer .port .copyr{
+    padding-left: 2%;
+}
+
+
+/* ================================
+           STORE PAGE
+================================ */
+
+
+/* --------------------------------------
+            NAVIGATION BAR
+-------------------------------------- */
+
+.storenav{
+    padding: 5px 3% !important;
+    display: flex !important;
+    align-items: center !important;
+    position: fixed;
+    top: 0;
+    background-color: rgba(17, 17, 17);
+    width: 100%;
+    z-index:8;
+    /* box-shadow: 0 0 6px 0 rgba(10, 10, 15, 0.706); */
+}
+.storenav img{
+    /* width: 60px !important; */
+    border-radius: 100%;
+    margin-right: 3%;
+}
+.storenav a{
+    color: white;
+    font-size: 18.5px;
+    font-weight: 600;
+    margin-right: 3px;
+}
+.storenav a:hover{
+    color: rgb(19, 19, 255);
+}
+.active{
+    color: rgb(0, 150, 219)!important;
+    border-bottom: 2px solid rgb(0, 150, 219) !important;
+}
+.navColor{
+    /* color: rgb(17, 17, 17); */
+    background-color: white;
+}
+.linkcolor{
+    color: rgb(17, 17, 17) !important;
+}
+
+
+/* --------------------------------------
+            HERO SECTION
+----------------------------------------- */
+
+.storehero{
+    color: white;
+    height: 90vh;
+    padding: 4%;
+    background-position:center;
+    background-size: cover;
+    background-image: url(../assets/elevated-view-spilled-pills-stethoscope-laptop-with-succulent-plant-isolated-white-surface.jpg);
+    position: relative;
+}
+.storehero::before{
+    content: "";
+    background: linear-gradient(60deg, rgba(10, 10, 10, 0.973) 30%, rgba(10, 10, 10, 0.965)50%,  rgba(10, 10, 15, 0.73) 98%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.storehero h1{
+    font-size: 45px;
+    margin-top: 15%;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 3;
+}
+.storehero p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 4;
+}
+.storehero button{
+    background-color: rgb(0, 150, 219);
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+}
+.storehero button:hover{
+    background-color: white;
+    color: rgb(0, 150, 219);
+}
+
+/* -------------------------------------------
+        HOME PAGE CALL TO ACTION
+------------------------------------------- */
+
+.homecall{
+    margin: 80px auto 30px;
+    height: auto;
+    font-size: 18px;
+    color: rgb(17, 17, 17);
+}
+.storecall .scall1{
+    padding: 15px 15px 5px;
+    border-radius: 10px 0px 0px 0px;
+    background: linear-gradient(90deg, rgba(10, 10, 10, 0.882), rgba(255, 255, 255, 0.836)), url(../assets/young-handsome-physician-medical-robe-with-stethoscope.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    line-height: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+}
+.storecall .scall2{
+    padding: 15px 15px 5px;
+    border-radius: 10px 0px 0px 0px;
+    background: linear-gradient(90deg, rgba(17, 17, 17, 0.822), rgba(255, 255, 255, 0.896)), url(../assets/top-view-pills-with-spoon.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    line-height: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* ----------------------
+    SHOP SECTION
+---------------------- */
+.pharmacy{
+    background-color: rgb(236, 236, 236);
+}
+.finddrugs{
+    position: relative;
+}
+.finddrugs .available{
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(0, 150, 219);
+}
+.drugs .category{
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid rgb(0, 150, 219);
+}
+.finddrugs input{
+    border: 1px solid gray;
+    height: 6.5vh;
+    padding: 5px 5px 5px 8px;
+    width: 230px;
+    margin-right: 5px;
+    border-radius: 100px;
+    outline: none;
+}
+.finddrugs i{
+    font-size: 20px;
+    color: white;
+    border-radius: 100%;
+    height: 7vh;
+    padding: 4px 13px;
+    background-color: rgb(0, 150, 219);
+}
+.finddrugs i:hover{
+    cursor: pointer;
+    background-color: rgb(32, 32, 32);
+}
+.drugs h5{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+}
+.drugs p{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 150, 219);
+}
+.drugs .cart{
+    background-color: rgb(17, 17, 17);
+    color: white;
+    border: none;
+    font-weight: 500;
+}
+.drugs .cart:hover{
+    background-color: rgb(0, 150, 219);
+    color: rgb(17, 17, 17);
+    transition: 0.4s;
+}
+.malaria .drug1{
+    background: url(../assets/Malaria/Artboard16_ad318b54-389a-4230-928a-e70e76f9dc30.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.malaria .malaria1{
+    background-color: white;
+}
+.malaria .drug1:hover{
+    background:  url(../assets/Malaria/Artboard16_ad318b54-389a-4230-928a-e70e76f9dc30.jpg);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.malaria .malaria2{
+    background-color: white;
+}
+.malaria .drug2{
+    background: url(../assets/Malaria/lumartem.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.malaria .drug2:hover{
+    background: url(../assets/Malaria/lumartem.jpg);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.malaria .malaria3{
+    background-color: white;
+}
+.malaria .drug3{
+    background: url(../assets/Malaria/defgrh.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.malaria .drug3:hover{
+    background: url(../assets/Malaria/defgrh.jpg);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    transition: 0.45s ease-in-out;
+}
+.malaria .malaria4{
+    background-color: white;
+}
+.malaria .drug4{
+    background: url(../assets/Malaria/ertyu.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.malaria .drug4:hover{
+    background: url(../assets/Malaria/ertyu.jpg);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.malaria .drug5{
+    background: url(../assets/Malaria/Lonart-Tablets-Artemether-20mg-Lumefantrine-120mg-6-Tablets.jpeg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.malaria .malaria5{
+    background-color: white;
+}
+.malaria .drug5:hover{
+    background:  url(../assets/Malaria/Lonart-Tablets-Artemether-20mg-Lumefantrine-120mg-6-Tablets.jpeg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.malaria .drug6{
+    background: url(../assets/Malaria/coartem-generic-500x500-1.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.malaria .malaria6{
+    background-color: white;
+}
+.malaria .drug6:hover{
+    background:  url(../assets/Malaria/coartem-generic-500x500-1.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.pain .drug1{
+    background: url(../assets/Pain-relief/mgk5158-gsk-panadol-tablets-455x455.png);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pain .pain1{
+    background-color: white;
+}
+.pain .drug1:hover{
+    background:  url(../assets/Pain-relief/mgk5158-gsk-panadol-tablets-455x455.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.pain .drug2{
+    background: url(../assets/Pain-relief/Panadol-Extra-Advance-Box-32s380x463.png);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pain .pain2{
+    background-color: white;
+}
+.pain .drug2:hover{
+    background:  url(../assets/Pain-relief/Panadol-Extra-Advance-Box-32s380x463.png);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.pain .drug3{
+    background: url(../assets/Pain-relief/mixanal.png);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pain .pain3{
+    background-color: white;
+}
+.pain .drug3:hover{
+    background:  url(../assets/Pain-relief/mixanal.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.pain .drug4{
+    background: url(../assets/Pain-relief/sudrex.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pain .pain4{
+    background-color: white;
+}
+.pain .drug4:hover{
+    background:  url(../assets/Pain-relief/sudrex.jpg);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.pain .drug5{
+    background: url(../assets/Pain-relief/BOSKA-TAB-600x600-removebg-preview.png);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pain .pain5{
+    background-color: white;
+}
+.pain .drug5:hover{
+    background:  url(../assets/Pain-relief/BOSKA-TAB-600x600-removebg-preview.png);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.bloodtonic .drug1{
+    background: url(../assets/Blood-Tonic/bunto.jpeg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bloodtonic .blood1{
+    background-color: white;
+}
+.bloodtonic .drug1:hover{
+    background:  url(../assets/Blood-Tonic/bunto.jpeg);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.bloodtonic .drug2{
+    background: url(../assets/Blood-Tonic/1Lic4UcCjePTMvTd0NaKXJfaXkVwMoDAi2EJR6a5.jpeg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bloodtonic .blood2{
+    background-color: white;
+}
+.bloodtonic .drug2:hover{
+    background:  url(../assets/Blood-Tonic/1Lic4UcCjePTMvTd0NaKXJfaXkVwMoDAi2EJR6a5.jpeg);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.bloodtonic .drug3{
+    background: url(../assets/Blood-Tonic/19772274395f356879b41e3product.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bloodtonic .blood3{
+    background-color: white;
+}
+.bloodtonic .drug3:hover{
+    background:  url(../assets/Blood-Tonic/19772274395f356879b41e3product.jpg);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.bloodtonic .drug4{
+    background: url(../assets/Blood-Tonic/ferrotone-new.png);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bloodtonic .blood4{
+    background-color: white;
+}
+.bloodtonic .drug4:hover{
+    background:  url(../assets/Blood-Tonic/ferrotone-new.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.bloodtonic .drug5{
+    background: url(../assets/Blood-Tonic/uXUvSWGBSetsbXmRCAJ46hH4l6z2NcUo0jC14MW9.jpeg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bloodtonic .blood5{
+    background-color: white;
+}
+.bloodtonic .drug5:hover{
+    background:  url(../assets/Blood-Tonic/uXUvSWGBSetsbXmRCAJ46hH4l6z2NcUo0jC14MW9.jpeg);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.diarrhea .drug1{
+    background: url(../assets/Diarrhea/Colodium-capsules-100-capsules--300x300.png);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.diarrhea .diarrhea1{
+    background-color: white;
+}
+.diarrhea .drug1:hover{
+    background:  url(../assets/Diarrhea/Colodium-capsules-100-capsules--300x300.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.diarrhea .drug2{
+    background: url(../assets/Diarrhea/OkeA458.jpg);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.diarrhea .diarrhea2{
+    background-color: white;
+}
+.diarrhea .drug2:hover{
+    background: url(../assets/Diarrhea/OkeA458.jpg);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.diarrhea .drug3{
+    background: url(../assets/Diarrhea/gecrol.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.diarrhea .diarrhea3{
+    background-color: white;
+}
+.diarrhea .drug3:hover{
+    background: url(../assets/Diarrhea/gecrol.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.diarrhea .drug4{
+    background: url(../assets/Diarrhea/1316127993622b6dcc55a70product.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.diarrhea .diarrhea4{
+    background-color: white;
+}
+.diarrhea .drug4:hover{
+    background:  url(../assets/Diarrhea/1316127993622b6dcc55a70product.jpg);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.cold .drug1{
+    background: url(../assets/Cold/Contac-Cold-Flu-Caplets-Day-24-ct_c950ce13-4759-4db3-aabc-c00a45714556.a062b94ed9993d3a68c5e19fe860f69b.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cold .cold1{
+    background-color: white;
+}
+.cold .drug1:hover{
+    background:  url(../assets/Cold/Contac-Cold-Flu-Caplets-Day-24-ct_c950ce13-4759-4db3-aabc-c00a45714556.a062b94ed9993d3a68c5e19fe860f69b.jpg);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.cold .drug2{
+    background: url(../assets/Cold/flucor-day.jpeg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cold .cold2{
+    background-color: white;
+}
+.cold .drug2:hover{
+    background: url(../assets/Cold/flucor-day.jpeg);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.cold .drug3{
+    background: url(../assets/Cold/ibucap.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cold .cold3{
+    background-color: white;
+}
+.cold .drug3:hover{
+    background: url(../assets/Cold/ibucap.jpg);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.cold .drug4{
+    background: url(../assets/Cold/mixagrip.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cold .cold4{
+    background-color: white;
+}
+.cold .drug4:hover{
+    background:  url(../assets/Cold/mixagrip.jpg);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.heartburn .drug1{
+    background: url(../assets/Heartburn/danacid-12x8-2.png);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heartburn .heart1{
+    background-color: white;
+}
+.heartburn .drug1:hover{
+    background:  url(../assets/Heartburn/danacid-12x8-2.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.heartburn .drug2{
+    background: url(../assets/Heartburn/drgi420.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heartburn .heart2{
+    background-color: white;
+}
+.heartburn .drug2:hover{
+    background:  url(../assets/Heartburn/drgi420.jpg);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.heartburn .drug3{
+    background: url(../assets/Heartburn/Gaviscon-Peppermint-Suspension-ml.jpg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heartburn .heart3{
+    background-color: white;
+}
+.heartburn .drug3:hover{
+    background:  url(../assets/Heartburn/Gaviscon-Peppermint-Suspension-ml.jpg);
+    background-position: center;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.heartburn .drug4{
+    background: url(../assets/Heartburn/Polygel-Syrup-3.png);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heartburn .heart4{
+    background-color: white;
+}
+.heartburn .drug4:hover{
+    background:  url(../assets/Heartburn/Polygel-Syrup-3.png);
+    background-position: center;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+.heartburn .drug5{
+    background: url(../assets/Heartburn/PU31kwRvOw1OHT6PG6Ye0ayTgqgt2FuRQkFzU8Bm.jpeg);
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heartburn .heart5{
+    background-color: white;
+}
+.heartburn .drug5:hover{
+    background:  url(../assets/Heartburn/PU31kwRvOw1OHT6PG6Ye0ayTgqgt2FuRQkFzU8Bm.jpeg);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transition: 0.45s;
+}
+
+
+
+
+
+/* ======================
+    MEDIA QUERY
+====================== */
+@media screen and (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+    .smnav{
+        display: block !important;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 35;
+        padding-top: 15px;
+    }
+    .navbar{
+        display: block !important;
+    }
+    .mynav{
+        padding-top: 5px;
+        /* display: block !important; */
+        display: flex !important;
+        background-color: rgb(0, 150, 219);
+    }
+    .mynav img{
+        border-radius: 100%;
+    }
+    .smnav a{
+        width: 20%;
+        font-size: 18px;
+        font-weight: 600;
+        margin-right: 3px;
+    }
+    .navbar-toggler-icon{
+        color: white !important;
+    }
+    .hero{
+        height: 60vh;
+    }
+    .hero h1{
+        font-size: 40px;
+    }
+    .homecall .hcall1{
+        margin: 0 auto 15px;
+        width: 49% !important;
+        box-shadow: 0 0 0 0;
+        border: 1px solid rgba(17, 17, 17, 0.788);
+    }
+    .homecall .hcall2{
+        margin: 0 auto 15px;
+        width: 49% !important;
+        box-shadow: 0 0 0 0;
+        border: 1px solid rgba(17, 17, 17, 0.788);
+    }
+    .homecall .hcall3{
+        margin: 0 auto 15px;
+        width: 49% !important;
+        box-shadow: 0 0 0 0;
+        border: 1px solid rgba(17, 17, 17, 0.788);
+    }
+    .homecall .hcall4{
+        margin: 0 auto 15px;
+        width: 49% !important;
+        box-shadow: 0 0 0 0;
+        border: 1px solid rgba(17, 17, 17, 0.788);
+    }
+    .partners{
+        display: grid;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .mynav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav.smnav{
+        display: none !important;
+    }
+    .hero{
+        height: auto;
+    }
+    .homecall .hcall1{
+        margin: 0 auto 15px;
+        width: 49% !important;
+        box-shadow: 0 0 0 0;
+        border: 1px solid rgba(17, 17, 17, 0.788);
+    }
+    .homecall .hcall2{
+        margin: 0 auto 15px;
+        width: 49% !important;
+        box-shadow: 0 0 0 0;
+        border: 1px solid rgba(17, 17, 17, 0.788);
+    }
+    .homecall .hcall3{
+        margin: 0 auto 15px;
+        width: 49% !important;
+        box-shadow: 0 0 0 0;
+        border: 1px solid rgba(17, 17, 17, 0.788);
+    }
+    .homecall .hcall4{
+        margin: 0 auto 15px;
+        width: 49% !important;
+        box-shadow: 0 0 0 0;
+        border: 1px solid rgba(17, 17, 17, 0.788);
+    }
+}
+
+@media screen and (min-width:1024px){
+    .disappear{
+        display: none;
+    }
+    .appear{
+        display: block;
+    }
+    .pt{
+        display: none !important;
+    }
+}

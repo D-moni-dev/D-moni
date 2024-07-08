@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div id="preloader"><img src="assets/logodowns.png" alt=""></div>
+    <nav class="navbar storenav navbar-expand-md">
+        <a href="./index.html" class="nav-link"><img src="./assets/davidpharml.png" alt="logo" id="logo" width="38%"/></a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-store" href="./index.html" id="at" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-about" href="#aboutpage">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-service" href="#servicepage">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./SignUp.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-contact" href="">Search <i class="bi bi-search"></i></a>
+                    </li>
+                </ul>
+        </div>
+  </nav>
+
+  <!-- --------------------
+      HERO SECTION
+  -------------------- -->
+  <div class="storehero">
+        <div>
+            <h1>Affordable Variety Of Drugs</h1>
+            <p> Discover expert care, quality products, and personalized service <br> tailored towards the satisfaction of your needs with DavidPharm by your side.</p>
+            <button class="btn herobtn">Shop Now</button>
+        </div>
+    </div>
+<br>
+        <div class="container mt-4 mb-5">
+            <div class="storecall row gap-0.9" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                <div class="scall1 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <h3>Medical Attention</h3>
+                </div>
+                <div class="scall2 col-xs-12 col-sm-12 col-md-12 col-lg-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+                    <h3>Original Drugs</h3>
+                </div>
+            </div>
+        </div>
+    
+<!-- <br><br><br><br><br><br><br><br> -->
+    <div class="pharmacy py-5">
+        <div class="shop container mt-3">
+            <div class="finddrugs mt-2 row d-flex justify-content-between">
+                <p class="col-xs-12 col-sm-12 col-md-6 col-lg-3"><span class="available">AVAILABLE PRODUCTS </span></p>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-end">
+                    <input type="text" onkeyup="search()" placeholder="search for medicine" class="search">
+                    <i class="bi bi-search"></i>
+                </div>
+            </div>
+            <div class="drugs mx-5 my-4">
+                <div class="malaria row gap-4">
+                    <span class="category">MALARIA</span>
+                    <div class="malaria1 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug1 mb-1"></div>
+                        <h5 class="">Amartem Softgel</h5>
+                        <p class="mb-2">₦1,400</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="malaria2 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug2 mb-1"></div>
+                        <h5 class="">Lumartem</h5>
+                        <p class="mb-2">₦1,300</p>
+                        <button class="cart p-2">ORDER NOW</button>
+                    </div>
+                    <div class="malaria3 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug3 mb-1"></div>
+                        <h5 class="">Laris</h5>
+                        <p class="mb-2">₦1,000</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="malaria4 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug4 mb-1"></div>
+                        <h5 class="">Camosunate</h5>
+                        <p class="mb-2">₦700</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="malaria5 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug5 mb-1"></div>
+                        <h5 class="">Lonart Tablets</h5>
+                        <p class="mb-2">₦700</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="malaria6 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug6 mb-1"></div>
+                        <h5 class="">Coartem</h5>
+                        <p class="mb-2">₦900</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                </div>
+                <div class="pain row gap-4 mt-5">
+                    <span class="category">PAIN RELIEF AND HEADACHE</span>
+                    <div class="pain1 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug1 mb-1"></div>
+                        <h5>Panadol</h5>
+                        <p class="mb-2">₦600</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="pain2 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug2 mb-1"></div>
+                        <h5>Panadol Extra</h5>
+                        <p class="mb-2">₦400</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="pain3 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug3 mb-1"></div>
+                        <h5>Mixanal</h5>
+                        <p class="mb-2">₦350</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="pain4 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug4 mb-1"></div>
+                        <h5>Sudrex</h5>
+                        <p class="mb-2">₦300</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="pain5 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug5 mb-1"></div>
+                        <h5>Boska</h5>
+                        <p class="mb-2">₦300</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                </div>
+                <div class="bloodtonic mt-5 row gap-4">
+                    <span class="category">BLOOD TONIC</span>
+                    <div class="blood1 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug1 mb-1"></div>
+                        <h5>Bunto</h5>
+                        <p class="mb-2">₦1,900</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="blood2 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug2 mb-1"></div>
+                        <h5>Chemiron</h5>
+                        <p class="mb-2">₦1,600</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="blood3 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug3 mb-1"></div>
+                        <h5>Ferobin</h5>
+                        <p class="mb-2">₦1,500</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="blood4 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug4 mb-1"></div>
+                        <h5>Ferrotone</h5>
+                        <p class="mb-2">₦1,200</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="blood5 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug5 mb-1"></div>
+                        <h5>Emzoron Tonic</h5>
+                        <p class="mb-2">₦1,200</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                </div>
+                <div class="diarrhea row gap-4 mt-5">
+                    <span class="category">DIARRHEA</span>
+                    <div class="diarrhea1 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug1 mb-1"></div>
+                        <h5 class="">Colodium</h5>
+                        <p class="mb-2">₦500</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="diarrhea2 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug2 mb-1"></div>
+                        <h5 class="">Mist.Mag Trisilicate</h5>
+                        <p class="mb-2">₦1,000</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="diarrhea3 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug3 mb-1"></div>
+                        <h5 class="">Gecrol</h5>
+                        <p class="mb-2">₦800</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="diarrhea4 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug4 mb-1"></div>
+                        <h5 class="">Imodium</h5>
+                        <p class="mb-2">₦600</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                </div>
+                <div class="cold row gap-4 mt-5">
+                    <span class="category">COLD</span>
+                    <div class="cold1 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug1 mb-1"></div>
+                        <h5 class="">Contac</h5>
+                        <p class="mb-2">₦700</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="cold2 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug2 mb-1"></div>
+                        <h5 class="">Flucor Day</h5>
+                        <p class="mb-2">₦500</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="cold3 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug3 mb-1"></div>
+                        <h5 class="">Ibucap</h5>
+                        <p class="mb-2">₦300</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="cold4 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug4 mb-1"></div>
+                        <h5 class="">Mixagrip</h5>
+                        <p class="mb-2">₦300</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                </div>
+                <div class="heartburn mt-5 row gap-4">
+                    <span class="category">HEARTBURN</span>
+                    <div class="heart1 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug1 mb-1"></div>
+                        <h5>Danacid</h5>
+                        <p class="mb-2">₦900</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="heart2 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug2 mb-1"></div>
+                        <h5>Gestid</h5>
+                        <p class="mb-2">₦1,200</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="heart3 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug3 mb-1"></div>
+                        <h5>Gaviscon</h5>
+                        <p class="mb-2">₦1,300</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="heart4 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug4 mb-1"></div>
+                        <h5>Polygen</h5>
+                        <p class="mb-2">₦800</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                    <div class="heart5 col-xs-12 col-sm-12 col-md-12 col-lg-2 py-2">
+                        <div class="drug5 mb-1"></div>
+                        <h5>Jawasil</h5>
+                        <p class="mb-2">₦1,000</p>
+                        <button class="cart p-2 mb-2">ORDER NOW</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+      <div class="foot row container">
+      <div class="fordev col-xs-12 col-sm-12 col-md-6 col-lg-3">
+        <div><img src="./assets/logodowns.png" class="img-fluid mb-4"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo voluptatum</p>
+      </div>
+      <div class="res col-xs-12 col-sm-12 col-md-6 col-lg-3">
+          <h5 class="mb-4">FOR BRANDS</h5>
+          <p>Brands</p>
+          <p>Publishers</p>
+          <p>Style guide</p>
+          <p>Performance Marketing</p>
+      </div>
+      <div class="res col-xs-12 col-sm-12 col-md-6 col-lg-3">
+          <h5 class="mb-4">PHOTOGRAPHY</h5>
+          <p>Events</p>
+          <p>Blogs</p>
+          <p>Portfolio</p>
+          <p>Case studio</p>
+      </div>
+      <div class="ab col-xs-12 col-sm-12 col-md-6 col-lg-3">
+          <h5 class="mb-4">ABOUT DAVIDPHARM</h5>
+          <p><a href="./Services.html" class="nav-link">Services</a></p>
+          <p><a href="/About.html" class="nav-link">About Us</a></p>
+          <p><a href="./Services.html" class="nav-link">Contact Us</a></p>
+          <p><a href="#" class="nav-link">Our Store</a></p>
+      </div>
+      <hr>
+      <div class="port row align-items-center">
+          <div class="terms part col-xs-12 col-sm-12 col-md-6 col-lg-4"><span>Terms</span><span> Privacy</span><span> All Rights Reserved</span></div>
+          <div class="copyr col-xs-12 col-sm-12 col-md-6 col-lg-4"><span class="yr">© 2024 DavidPharm</span><span class="myname"> by Gad-David</span></div>
+          <div class="platforms col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <span class="bi bi-twitter mx-1"></span>
+            <span class="bi bi-facebook mx-1"></span>
+            <span class="bi bi-youtube mx-1"></span>
+            <span class="bi bi-whatsapp mx-1"></span>
+            <span class="bi bi-instagram mx-1"></span>
+          </div>
+      </div>
+      </div>
+      
+  </footer>
+
+
+
+
+
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
